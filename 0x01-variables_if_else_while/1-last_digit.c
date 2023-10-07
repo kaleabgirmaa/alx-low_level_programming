@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+/**
+* main - Prints last digit using if and else statement
+*
+* Description - prints "last digit greater or less using if and else"
+*
+* Return: 0 success
+*/
 
 int main(void)
 {
