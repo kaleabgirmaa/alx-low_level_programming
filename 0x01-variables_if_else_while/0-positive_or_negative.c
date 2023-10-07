@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+/**
+* main - Prints result using if and else statement
+* Description - prints "negative positive and zero using if and else"
+* Return: 0 success
+*/
 int main(void)
 {
 	int n;
