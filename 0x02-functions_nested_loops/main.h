@@ -14,5 +14,7 @@ int sum_of_multiples(void);
 void print_fibonacci(void);
 void sum_even_fibonacci(void);
 void print_first_98_fibonacci(void);
+void print_alphabet(void);
+
 
 #endif /* MAIN_H */
