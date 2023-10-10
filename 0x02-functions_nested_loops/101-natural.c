@@ -1,27 +1,38 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
-* main - prints main function
-*
-* Description - a program that computes and prints the sum of all
-* 		the multiples of 3 or 5 below 1024 (excluded),
-* 		followed by a new line.
-*
-* Return: 0 success
-*/
+
+ * main - Finds and prints the sum of the even-valued terms
+
+ *        in the Fibonacci sequence below 4 million.
+
+ *
+
+ * Return: Always 0 (Success)
+
+ */
 
 int main(void)
 {
-	int i, sum = 0;
+    int i;
+    unsigned long int j, k, next, sum;
 
-	for (i = 0; i < 1024; i++)
-	{
-		if ((i % 3) == 0 || (i % 5) == 0)
-			sum += i;
-	}
+    j = 1;
+    k = 2;
+    sum = 0;
 
-	printf("%d\n", sum);
+    for (i = 1; i <= 33; ++i)
+    {
+        if (j < 4000000 && (j % 2) == 0)
+        {
+            sum = sum + j;
+        }
+        next = j + k;
+        j = k;
+        k = next;
+    }
 
-	return (0);
+    printf("%lu\n", sum);
+
+    return (0);
 }
