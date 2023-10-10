@@ -1,29 +1,32 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_to_98 - Prints all natural numbers from n to 98, followed by a new line
- * @n: The starting number
+ * print_sign - Prints the sign of a number
+ * @n: The number to check the sign of
  *
  * Description:
- * This function prints all natural numbers from n to 98, followed by a new line.
- * If n is greater than or equal to 98, it will count down.
- * If n is less than 98, it will count up.
+ * This function prints the sign of a number (+, 0, or -).
+ * If the number is greater than 0, it prints "+", and returns 1.
+ * If the number is 0, it prints "0", and returns 0.
+ * If the number is less than 0, it prints "-", and returns -1.
  *
- * Return: void
+ * Return: The sign of the number (1 if positive, 0 if zero, -1 if negative)
  */
-void print_to_98(int n)
+int print_sign(int n)
 {
-	if (n >= 98)
+	if (n > 0)
 	{
-		while (n > 98)
-			printf("%d, ", n--);
-		printf("%d\n", n);
+		_putchar('+');
+		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar('0');
+		return (0);
 	}
 	else
 	{
-		while (n < 98)
-			printf("%d, ", n++);
-		printf("%d\n", n);
+		_putchar('-');
+		return (-1);
 	}
 }
