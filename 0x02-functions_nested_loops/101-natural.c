@@ -1,38 +1,30 @@
 #include <stdio.h>
 
+
+
 /**
 
- * main - Finds and prints the sum of the even-valued terms
+ * main - Lists all the natural numbers below 1024 (excluded)
 
- *        in the Fibonacci sequence below 4 million.
+ *        that are multiples of 3 or 5.
 
  *
 
- * Return: Always 0 (Success)
+ * Return: Always 0.
 
  */
 
 int main(void)
 {
-    int i;
-    unsigned long int j, k, next, sum;
+    int i, sum = 0;
 
-    j = 1;
-    k = 2;
-    sum = 0;
-
-    for (i = 1; i <= 33; ++i)
+    for (i = 0; i < 1024; i++)
     {
-        if (j < 4000000 && (j % 2) == 0)
-        {
-            sum = sum + j;
-        }
-        next = j + k;
-        j = k;
-        k = next;
+        if ((i % 3) == 0 || (i % 5) == 0)
+            sum += i;
     }
 
-    printf("%lu\n", sum);
+    printf("%d\n", sum);
 
     return (0);
 }
