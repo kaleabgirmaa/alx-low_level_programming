@@ -15,6 +15,6 @@ void print_fibonacci(void);
 void sum_even_fibonacci(void);
 void print_first_98_fibonacci(void);
 void print_alphabet(void);
-
+void print_alphabet_x10(void);
 
 #endif /* MAIN_H */
