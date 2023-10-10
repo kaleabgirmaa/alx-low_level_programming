@@ -2,13 +2,13 @@
 #include "main.h"
 
 /**
-* print_times_table - prototype function for print_times_table
-*
-* Description - prints the n times table, starting with 0
-*
-* Return:  success
-*/
-
+ * print_times_table - Prints the n times table, starting with 0.
+ * @n: The number of times to print the times table.
+ *
+ * Description: This function prints the n times table, starting with 0.
+ *
+ * Return: None.
+ */
 void print_times_table(int n)
 {
 	int num, mult, prod;
