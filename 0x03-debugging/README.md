@@ -36,3 +36,4 @@ In this task, the objective is to find the error in the given code and fix it so
 
 These tasks are part of the 0x03-debugging project for the ALX School Low-Level Programming curriculum.
 
+
